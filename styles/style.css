@@ -48,6 +48,8 @@
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -70,6 +72,8 @@
   bottom: 0px;
   line-height: 0;
   z-index: 1;
+  width: 765px;
+  height: 608px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -134,6 +138,10 @@
 
 /* стили DIGITS */
 
+.digits {
+  margin-bottom: 100px;
+}
+
 .table {
   display: flex;
   justify-content: space-between;
@@ -152,15 +160,16 @@
 
 .table__text {
   margin-top: 20px;
+  margin-bottom: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  padding-bottom: 0px;
+  padding: 0px;
 }
 
 .section-title {
   width: 60%;
-  margin: 100px auto 20px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -176,25 +185,31 @@
 }
 
 .table__heading {
+  padding: 0;
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
 /* стили FEYNMAN */
+
 .feynman {
   position: relative;
-  height: 890px;
+  min-height: 890px;
+  padding-top: 100px;
+  box-sizing: border-box;
 }
 
 .feynman__title {
   width: 648px;
   text-align: center;
-  margin: 100px auto 70px auto;
+  margin: 0 auto 70px auto;
   z-index: 2;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 700;
+  position: relative;
 }
 
 .feynman__subtitle {
@@ -214,6 +229,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  text-decoration: none;
  }
 
 .feynman__illustration {
@@ -222,6 +238,8 @@
   bottom: 0px;
   z-index: 0;
   line-height: 0;
+  width: 867px;
+  height: 637px;
 }
 
 /* стили KAUFMAN */
@@ -235,15 +253,19 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  background-size: cover;
   position: absolute;
   right: -210px;
   top: 0px;
   z-index: 0;
 }
 
-.section-title__theme_dark {
-  text-align: center;
+.section-title_theme_dark {
   margin-top: 90px;
+  padding: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
@@ -251,7 +273,7 @@
   z-index: 1;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   margin-top: 20px;
   margin-bottom: 0;
   text-align: center;
@@ -309,7 +331,7 @@
   margin-right: auto;
   display: flex;
   justify-content: space-between;
-  min-height: 350px;
+  min-height: 250px;
 }
 
 .logo_place_footer {
@@ -370,4 +392,6 @@
 
 .footer__social-icon {
   margin-right: 10px;
+  width: 16px;
+  height: 16px;
 }
