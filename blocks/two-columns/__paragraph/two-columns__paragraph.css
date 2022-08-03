@@ -6,3 +6,6 @@
   line-height: 34px;
 }
 
+.two-columns__paragraph:last-child {
+  margin-bottom: 0px;
+}
